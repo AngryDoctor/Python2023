@@ -19,9 +19,13 @@
 
 data = [int(i) for i in input('Введите до 100 чисел через пробел: ').split()]
 n = len(data)
+if n > 100:
+    exit()
 max_count = 0
 count = 0
 for i in data:
+    if not -50 < i < 50:
+        exit('Ошибка данных')
     if i > 0:
         count += 1
     else:
