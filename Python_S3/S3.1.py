@@ -4,3 +4,5 @@
 # Output: 6
 
 data = [int(i) for i in input('Введите числа: ').split()]
+
+print(len(set(data)))
